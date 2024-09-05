@@ -1,0 +1,1556 @@
+ExplainOutput(graphs=[GraphModule(
+  (L__self___conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (L__self___bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (L__self___relu): ReLU(inplace=True)
+  (L__self___maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (getattr_L__self___layer1___0___conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer1___0___bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer1___0___relu): ReLU(inplace=True)
+  (getattr_L__self___layer1___0___conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer1___0___bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer1___1___conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer1___1___bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer1___1___relu): ReLU(inplace=True)
+  (getattr_L__self___layer1___1___conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer1___1___bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer2___0___conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (getattr_L__self___layer2___0___bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer2___0___relu): ReLU(inplace=True)
+  (getattr_L__self___layer2___0___conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer2___0___bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer2___0___downsample_0): Conv2d(64, 128, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  (getattr_L__self___layer2___0___downsample_1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer2___1___conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer2___1___bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer2___1___relu): ReLU(inplace=True)
+  (getattr_L__self___layer2___1___conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer2___1___bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer3___0___conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (getattr_L__self___layer3___0___bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer3___0___relu): ReLU(inplace=True)
+  (getattr_L__self___layer3___0___conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer3___0___bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer3___0___downsample_0): Conv2d(128, 256, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  (getattr_L__self___layer3___0___downsample_1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer3___1___conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer3___1___bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer3___1___relu): ReLU(inplace=True)
+  (getattr_L__self___layer3___1___conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer3___1___bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer4___0___conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+  (getattr_L__self___layer4___0___bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer4___0___relu): ReLU(inplace=True)
+  (getattr_L__self___layer4___0___conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer4___0___bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer4___0___downsample_0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+  (getattr_L__self___layer4___0___downsample_1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer4___1___conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer4___1___bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (getattr_L__self___layer4___1___relu): ReLU(inplace=True)
+  (getattr_L__self___layer4___1___conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (getattr_L__self___layer4___1___bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (L__self___avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (L__self___fc): Linear(in_features=512, out_features=1000, bias=True)
+)],
+              graph_count=1,
+              graph_break_count=0,
+              break_reasons=[],
+              op_count=9,
+              ops_per_graph=[[<built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in function iadd>,
+                              <built-in method flatten of type object at 0x7f203860d5e0>]],
+              out_guards=[
+        local_nn_module "getattr(L['self'].layer2, '1')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '1')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').downsample" CONSTANT_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').downsample, 9678144)"],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1'), 139772519389744)"],
+            'obj_weakref': <weakref at 0x7f1f53083830; to 'BasicBlock' at 0x7f1f535e1a30>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '0')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').conv2, 139772519545264)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0220; to 'Conv2d' at 0x7f1f536079b0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').downsample" CONSTANT_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').downsample, 9678144)"],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').relu, 139772519544592)"],
+            'obj_weakref': <weakref at 0x7f1f52d76930; to 'ReLU' at 0x7f1f53607710>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_hooks" SEQUENCE_LENGTH
+        {
+            'guard_types': ['TYPE_MATCH', 'SEQUENCE_LENGTH'],
+            'code': ["___check_type_id(G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_hooks, 9686080)", "not G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '0')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_pre_hooks" SEQUENCE_LENGTH
+        {
+            'guard_types': ['TYPE_MATCH', 'SEQUENCE_LENGTH'],
+            'code': ["___check_type_id(G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_pre_hooks, 9686080)", "not G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].fc" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].fc, 139772519545840)"],
+            'obj_weakref': <weakref at 0x7f1f53082b10; to 'Linear' at 0x7f1f53607bf0>
+            'guarded_class': <weakref at 0x7f1f60bb9f80; to 'type' at 0x50fefa0 (Linear)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').downsample" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').downsample, 139772519544928)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0860; to 'Sequential' at 0x7f1f53607860>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').conv2, 139772519544640)"],
+            'obj_weakref': <weakref at 0x7f1f52d77ce0; to 'Conv2d' at 0x7f1f53607740>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').bn2, 139772519544688)"],
+            'obj_weakref': <weakref at 0x7f1f52d75990; to 'BatchNorm2d' at 0x7f1f53607770>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').relu, 139772519545216)"],
+            'obj_weakref': <weakref at 0x7f1f52d76ac0; to 'ReLU' at 0x7f1f53607980>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').downsample" CONSTANT_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').downsample, 9678144)"],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "L['self'].layer3" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].layer3, 139772519544448)"],
+            'obj_weakref': <weakref at 0x7f1f53083240; to 'Sequential' at 0x7f1f53607680>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '1')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer3, '0').downsample, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer3, '0').downsample, '0'), 139772519543776)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0d60; to 'Conv2d' at 0x7f1f536073e0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '1')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1'), 139772519543440)"],
+            'obj_weakref': <weakref at 0x7f1f53083d30; to 'BasicBlock' at 0x7f1f53607290>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').downsample" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').downsample, 139772519543008)"],
+            'obj_weakref': <weakref at 0x7f1f52ca04a0; to 'Sequential' at 0x7f1f536070e0>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1'), 139772519545360)"],
+            'obj_weakref': <weakref at 0x7f1f52d74630; to 'BasicBlock' at 0x7f1f53607a10>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').conv1, 139772519539504)"],
+            'obj_weakref': <weakref at 0x7f1f52d77100; to 'Conv2d' at 0x7f1f53606330>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_hooks" SEQUENCE_LENGTH
+        {
+            'guard_types': ['TYPE_MATCH', 'SEQUENCE_LENGTH'],
+            'code': ["___check_type_id(G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_hooks, 9686080)", "not G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "L['self'].relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].relu, 139772521096992)"],
+            'obj_weakref': <weakref at 0x7f1f53082d40; to 'ReLU' at 0x7f1f53782720>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].bn1, 139772521103184)"],
+            'obj_weakref': <weakref at 0x7f1f53082c00; to 'BatchNorm2d' at 0x7f1f53783f50>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_pre_hooks" SEQUENCE_LENGTH
+        {
+            'guard_types': ['TYPE_MATCH', 'SEQUENCE_LENGTH'],
+            'code': ["___check_type_id(G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_pre_hooks, 9686080)", "not G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').bn2, 139772519545312)"],
+            'obj_weakref': <weakref at 0x7f1f52d75cb0; to 'BatchNorm2d' at 0x7f1f536079e0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').bn2, 139772519388304)"],
+            'obj_weakref': <weakref at 0x7f1f52d747c0; to 'BatchNorm2d' at 0x7f1f535e1490>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module'].torch" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['__import_torch_dot_nn_dot_modules_dot_module'].torch, 139776380396672)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aad7bf0; to 'type' at 0x93b280 (module)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').conv1, 139772680621712)"],
+            'obj_weakref': <weakref at 0x7f1f52d76de0; to 'Conv2d' at 0x7f1f5cfa4e90>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').relu, 139772519543296)"],
+            'obj_weakref': <weakref at 0x7f1f52d76480; to 'ReLU' at 0x7f1f53607200>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').conv2, 139772519387872)"],
+            'obj_weakref': <weakref at 0x7f1f52d76f70; to 'Conv2d' at 0x7f1f535e12e0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').conv1, 139772519544496)"],
+            'obj_weakref': <weakref at 0x7f1f52d77d80; to 'Conv2d' at 0x7f1f536076b0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].maxpool" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].maxpool, 139776380572384)"],
+            'obj_weakref': <weakref at 0x7f1f530836f0; to 'MaxPool2d' at 0x7f20398312e0>
+            'guarded_class': <weakref at 0x7f1f60a2ea20; to 'type' at 0x517eeb0 (MaxPool2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').conv2, 139772519543344)"],
+            'obj_weakref': <weakref at 0x7f1f52d775b0; to 'Conv2d' at 0x7f1f53607230>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').bn1, 139772519539648)"],
+            'obj_weakref': <weakref at 0x7f1f52d74b80; to 'BatchNorm2d' at 0x7f1f536063c0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '0')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '1')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].avgpool" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].avgpool, 139772519545696)"],
+            'obj_weakref': <weakref at 0x7f1f53083560; to 'AdaptiveAvgPool2d' at 0x7f1f53607b60>
+            'guarded_class': <weakref at 0x7f1f60a2fce0; to 'type' at 0x51987c0 (AdaptiveAvgPool2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '0')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').conv1, 139772519544160)"],
+            'obj_weakref': <weakref at 0x7f1f52d77a60; to 'Conv2d' at 0x7f1f53607560>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '1')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0'), 139772519544976)"],
+            'obj_weakref': <weakref at 0x7f1f52d74450; to 'BasicBlock' at 0x7f1f53607890>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').relu, 139772519539936)"],
+            'obj_weakref': <weakref at 0x7f1f52d762f0; to 'ReLU' at 0x7f1f536064e0>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').bn2, 139772519542816)"],
+            'obj_weakref': <weakref at 0x7f1f52d74d10; to 'BatchNorm2d' at 0x7f1f53607020>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '1')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '0')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').bn1, 139772519543584)"],
+            'obj_weakref': <weakref at 0x7f1f52d751c0; to 'BatchNorm2d' at 0x7f1f53607320>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '0')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '1')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '1')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '0')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '0')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '0')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '0')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '1')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '1')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '0')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '0')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0'), 139772519544016)"],
+            'obj_weakref': <weakref at 0x7f1f52d74090; to 'BasicBlock' at 0x7f1f536074d0>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '1')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').conv2, 139772519543680)"],
+            'obj_weakref': <weakref at 0x7f1f52d778d0; to 'Conv2d' at 0x7f1f53607380>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '1')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '0')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local "L['self']" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'], 139776400833280)"],
+            'obj_weakref': <weakref at 0x7f1f53135440; to 'ResNet' at 0x7f203ab83b00>
+            'guarded_class': <weakref at 0x7f1f536e50d0; to 'type' at 0x741cd20 (ResNet)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').downsample" CONSTANT_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').downsample, 9678144)"],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "L['self'].layer4" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].layer4, 139772519545408)"],
+            'obj_weakref': <weakref at 0x7f1f530833d0; to 'Sequential' at 0x7f1f53607a40>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').bn1, 139772680621664)"],
+            'obj_weakref': <weakref at 0x7f1f53083f10; to 'BatchNorm2d' at 0x7f1f5cfa4e60>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '1')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '0')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '1')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').bn2, 139772519545648)"],
+            'obj_weakref': <weakref at 0x7f1f52d75fd0; to 'BatchNorm2d' at 0x7f1f53607b30>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').bn1, 139772519543248)"],
+            'obj_weakref': <weakref at 0x7f1f52d74ea0; to 'BatchNorm2d' at 0x7f1f536071d0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module'].torch._C._get_tracing_state" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['__import_torch_dot_nn_dot_modules_dot_module'].torch._C._get_tracing_state, 139772756833792)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaa85e0; to 'type' at 0x93b7c0 (builtin_function_or_method)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '0')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '1')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '0')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer4, '0').downsample, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer4, '0').downsample, '0'), 139772519544736)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0fe0; to 'Conv2d' at 0x7f1f536077a0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '0')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer3, '0').downsample, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer3, '0').downsample, '1'), 139772519543920)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0ea0; to 'BatchNorm2d' at 0x7f1f53607470>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '1')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '0')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').bn2, 139772519544352)"],
+            'obj_weakref': <weakref at 0x7f1f52d75670; to 'BatchNorm2d' at 0x7f1f53607620>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer2, '0').downsample, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer2, '0').downsample, '1'), 139772519542960)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0c20; to 'BatchNorm2d' at 0x7f1f536070b0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        global "G['torch']" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['torch'], 139776380396672)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aad7bf0; to 'type' at 0x93b280 (module)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1').bn1, 139772519544544)"],
+            'obj_weakref': <weakref at 0x7f1f52d75800; to 'BatchNorm2d' at 0x7f1f536076e0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '1')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local "L['x']" TENSOR_MATCH
+        {
+            'guard_types': ['TENSOR_MATCH'],
+            'code': ["hasattr(L['x'], '_dynamo_dynamic_indices') == False"],
+            'obj_weakref': <weakref at 0x7f1f534a5670; to 'Tensor' at 0x7f1f60415130>
+            'guarded_class': <weakref at 0x7f1f6179ec50; to 'torch._C._TensorMeta' at 0x4c28050 (Tensor)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '1')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].conv1, 139776400833328)"],
+            'obj_weakref': <weakref at 0x7f1f53082e80; to 'Conv2d' at 0x7f203ab83b30>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').relu, 139772519544256)"],
+            'obj_weakref': <weakref at 0x7f1f52d767a0; to 'ReLU' at 0x7f1f536075c0>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').relu, 139772519543632)"],
+            'obj_weakref': <weakref at 0x7f1f52d76610; to 'ReLU' at 0x7f1f53607350>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '1')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '1')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '1')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '1')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '1')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '0')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').downsample" CONSTANT_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').downsample, 9678144)"],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '1')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._forward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '0')._forward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '1')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        global '' DEFAULT_DEVICE
+        {
+            'guard_types': ['DEFAULT_DEVICE'],
+            'code': ['utils_device.CURRENT_DEVICE == None'],
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '0')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer1, '0')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').conv2, 139772519545600)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0540; to 'Conv2d' at 0x7f1f53607b00>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').relu, 139772519545552)"],
+            'obj_weakref': <weakref at 0x7f1f52d76c50; to 'ReLU' at 0x7f1f53607ad0>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '0')._forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').conv1, 139772519543200)"],
+            'obj_weakref': <weakref at 0x7f1f52d77420; to 'Conv2d' at 0x7f1f536071a0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._backward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '0')._backward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer1, '0')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '1'), 139772519544400)"],
+            'obj_weakref': <weakref at 0x7f1f52d74270; to 'BasicBlock' at 0x7f1f53607650>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').bn1, 139772519545504)"],
+            'obj_weakref': <weakref at 0x7f1f52d75e40; to 'BatchNorm2d' at 0x7f1f53607aa0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').bn2, 139772519543728)"],
+            'obj_weakref': <weakref at 0x7f1f52d75350; to 'BatchNorm2d' at 0x7f1f536073b0>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._backward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '0')._backward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer4, '0').downsample, '1')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer4, '0').downsample, '1'), 139772519544880)"],
+            'obj_weakref': <weakref at 0x7f1f52ca1120; to 'BatchNorm2d' at 0x7f1f53607830>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '1').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '1').conv2, 139772519542768)"],
+            'obj_weakref': <weakref at 0x7f1f52d77290; to 'Conv2d' at 0x7f1f53606ff0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        shape_env '' SHAPE_ENV
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0'), 139776380568160)"],
+            'obj_weakref': <weakref at 0x7f1f530838d0; to 'BasicBlock' at 0x7f2039830260>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        global '' GRAD_MODE
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0'), 139772519543056)"],
+            'obj_weakref': <weakref at 0x7f1f53083b50; to 'BasicBlock' at 0x7f1f53607110>
+            'guarded_class': <weakref at 0x7f1f536e4e00; to 'type' at 0x74178f0 (BasicBlock)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].layer2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].layer2, 139772519543488)"],
+            'obj_weakref': <weakref at 0x7f1f53083150; to 'Sequential' at 0x7f1f536072c0>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(getattr(L['self'].layer2, '0').downsample, '0')" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(getattr(L['self'].layer2, '0').downsample, '0'), 139772519542720)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0b80; to 'Conv2d' at 0x7f1f53606fc0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        global '' TORCH_FUNCTION_STATE
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['__import_torch_dot_nn_dot_modules_dot_module'], 139772753020304)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aad7bf0; to 'type' at 0x93b280 (module)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '0')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '1')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '0')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '0')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '1')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer3, '0')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._forward_pre_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '1')._forward_pre_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer4, '1')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        global "G['torch'].flatten" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['torch'].flatten, 139776375787008)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaa85e0; to 'type' at 0x93b7c0 (builtin_function_or_method)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(G['__import_torch_dot_nn_dot_modules_dot_module']._global_forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0').bn2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '0').bn2, 139772519543392)"],
+            'obj_weakref': <weakref at 0x7f1f52d75030; to 'BatchNorm2d' at 0x7f1f53607260>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer1, '0').relu" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer1, '0').relu, 139772520922720)"],
+            'obj_weakref': <weakref at 0x7f1f52d76160; to 'ReLU' at 0x7f1f53757e60>
+            'guarded_class': <weakref at 0x7f1f609f2250; to 'type' at 0x51183e0 (ReLU)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module'].torch._C" FUNCTION_MATCH
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(G['__import_torch_dot_nn_dot_modules_dot_module'].torch._C, 139776375451344)"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aad7bf0; to 'type' at 0x93b280 (module)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer3, '0')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '0')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "L['self'].layer1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(L['self'].layer1, 139772519387728)"],
+            'obj_weakref': <weakref at 0x7f1f53082f20; to 'Sequential' at 0x7f1f535e1250>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._forward_pre_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer2, '1')._forward_pre_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1')._backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(getattr(L['self'].layer4, '1')._backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '1').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '1').conv1, 139772519545456)"],
+            'obj_weakref': <weakref at 0x7f1f52ca03b0; to 'Conv2d' at 0x7f1f53607a70>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer2, '1').conv1, 139772519543536)"],
+            'obj_weakref': <weakref at 0x7f1f52d77740; to 'Conv2d' at 0x7f1f536072f0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '0')" NOT_PRESENT_IN_GENERIC_DICT
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        global '' DETERMINISTIC_ALGORITHMS
+        {
+            'guard_types': None,
+            'code': None,
+            'obj_weakref': None
+            'guarded_class': None
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').conv2" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').conv2, 139772519544304)"],
+            'obj_weakref': <weakref at 0x7f1f52d77bf0; to 'Conv2d' at 0x7f1f536075f0>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').bn1, 139772519544208)"],
+            'obj_weakref': <weakref at 0x7f1f52d754e0; to 'BatchNorm2d' at 0x7f1f53607590>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        global "G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_hooks" DICT_CONST_KEYS
+        {
+            'guard_types': ['DICT_CONST_KEYS'],
+            'code': ["list(G['__import_torch_dot_nn_dot_modules_dot_module']._global_backward_hooks.keys()) == []"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer2, '1')._backward_hooks" BOOL_FALSE
+        {
+            'guard_types': ['BOOL_FALSE'],
+            'code': ["not getattr(L['self'].layer2, '1')._backward_hooks"],
+            'obj_weakref': None
+            'guarded_class': <weakref at 0x7f203aaf5030; to 'type' at 0x93cc40 (OrderedDict)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer3, '0').downsample" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer3, '0').downsample, 139772519543968)"],
+            'obj_weakref': <weakref at 0x7f1f52ca0630; to 'Sequential' at 0x7f1f536074a0>
+            'guarded_class': <weakref at 0x7f1f60a2cd10; to 'type' at 0x5172550 (Sequential)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').bn1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').bn1, 139772519545168)"],
+            'obj_weakref': <weakref at 0x7f1f52d75b20; to 'BatchNorm2d' at 0x7f1f53607950>
+            'guarded_class': <weakref at 0x7f1f60a3cd10; to 'type' at 0x519cda0 (BatchNorm2d)>
+        }
+        ,
+                          
+        local_nn_module "getattr(L['self'].layer4, '0').conv1" NN_MODULE
+        {
+            'guard_types': ['ID_MATCH'],
+            'code': ["___check_obj_id(getattr(L['self'].layer4, '0').conv1, 139772519545120)"],
+            'obj_weakref': <weakref at 0x7f1f52d74810; to 'Conv2d' at 0x7f1f53607920>
+            'guarded_class': <weakref at 0x7f1f609f13a0; to 'type' at 0x5104b70 (Conv2d)>
+        }
+        ],
+              compile_times='TorchDynamo compilation metrics:\n'
+                            'Function, Runtimes (s)\n'
+                            '_compile.<locals>.compile_inner, 0.3414\n'
+                            'OutputGraph.call_user_compiler, 0.0001')
