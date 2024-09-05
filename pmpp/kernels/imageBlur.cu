@@ -24,12 +24,12 @@ __global__ void blur_kernel(unsigned char *image, unsigned char *output, int wid
                 int currY = y + j;
                 if (currX >= 0 && currX < width && currY >= 0 && currY < height) {
                     pixelValue += image[baseOffset + currY * width + currX];
-                    ++count;
+                    ++pixelCount;
                 }
             }
         }
 
-        output[baseOffset + y * width + x] = pixelValue / count;
+        output[baseOffset + y * width + x] = pixelValue / pixelCount;
     }
 }
 
@@ -55,4 +55,7 @@ torch::Tensor blur_filter(torch::Tensor image, int radius) {
         width, height, radius
     );
 
+    // check CUDA error status (calls cudaGetLastError())
+    C10_CUDA_KERNEL_LAUNCH_CHECK();
+    return output;
 }
